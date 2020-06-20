@@ -1,0 +1,8 @@
+@tailwind base;
+
+a {
+  @apply text-blue-700 underline font-bold;
+}
+
+@tailwind components;
+@tailwind utilities;

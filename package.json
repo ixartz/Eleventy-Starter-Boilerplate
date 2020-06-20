@@ -1,0 +1,67 @@
+{
+  "name": "my-blog",
+  "version": "1.0.0",
+  "description": "My blog",
+  "scripts": {
+    "build-dev:webpack": "webpack",
+    "watch:webpack": "webpack --watch",
+    "watch:eleventy": "ELEVENTY_ENV=development eleventy --serve",
+    "dev": "npm-run-all clean build-dev:webpack --parallel watch:*",
+    "build:webpack": "NODE_ENV=production webpack --mode production",
+    "build:eleventy": "ELEVENTY_ENV=production eleventy",
+    "build": "run-s clean build:*",
+    "serve:local": "serve _site",
+    "serve": "run-s build serve:local",
+    "clean": "rimraf _site",
+    "format:js": "prettier '**/*.js' --write && eslint '**/*.js' --fix",
+    "format:json": "prettier '**/*.json' --write",
+    "format": "run-s format:*",
+    "lint": "eslint --ext .js ."
+  },
+  "license": "ISC",
+  "devDependencies": {
+    "@11ty/eleventy": "^0.11.0",
+    "@11ty/eleventy-plugin-syntaxhighlight": "^3.0.1",
+    "autoprefixer": "^9.8.0",
+    "copy-webpack-plugin": "^6.0.2",
+    "css-loader": "^3.5.3",
+    "cssnano": "^4.1.10",
+    "date-fns": "^2.14.0",
+    "eleventy-plugin-lazyimages": "^1.1.2",
+    "eslint": "^7.2.0",
+    "eslint-config-airbnb-base": "^14.2.0",
+    "eslint-plugin-import": "^2.21.2",
+    "file-loader": "^6.0.0",
+    "glob": "^7.1.6",
+    "html-minifier": "^4.0.0",
+    "html-webpack-plugin": "^4.3.0",
+    "husky": "^4.2.5",
+    "image-webpack-loader": "^6.0.0",
+    "lint-staged": "^10.2.9",
+    "mini-css-extract-plugin": "^0.9.0",
+    "npm-run-all": "^4.1.5",
+    "postcss-loader": "^3.0.0",
+    "prettier": "^2.0.5",
+    "rimraf": "^3.0.2",
+    "serve": "^11.3.2",
+    "tailwindcss": "^1.4.6",
+    "webpack": "^4.43.0",
+    "webpack-cli": "^3.3.11",
+    "webpack-fix-style-only-entries": "^0.5.0"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.js": [
+      "prettier --write",
+      "eslint --fix",
+      "eslint"
+    ],
+    "*.json": [
+      "prettier --write"
+    ]
+  }
+}

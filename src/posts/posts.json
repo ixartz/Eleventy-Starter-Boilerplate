@@ -1,0 +1,5 @@
+{
+  "layout": "layouts/post.ejs",
+  "permalink": "{{ page.fileSlug }}/index.html",
+  "tags": "posts"
+}

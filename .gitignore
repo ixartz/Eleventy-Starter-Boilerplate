@@ -1,0 +1,16 @@
+# Dependencies
+/node_modules
+
+# Output directories
+/_site
+
+# Generated file
+/src/_includes/layouts/webpack.ejs
+.lazyimages.json
+
+# Misc
+.DS_Store
+Thumbs.db
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*

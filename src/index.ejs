@@ -1,0 +1,29 @@
+---
+pagination:
+  data: collections.posts
+  size: 5
+  alias: list
+  reverse: true
+permalink: '<% if (pagination.pageNumber > 0) { %><%= `page${pagination.pageNumber + 1}/index.html` %><% } else { %>index.html<% } %>'
+eleventyComputed:
+  title: '<% if (pagination.pageNumber > 0) { %><%= `Page ${pagination.pageNumber + 1} | ${site.title}` %><% } else { %><%= site.title %><% } %>'
+---
+
+<h1 class="font-bold text-3xl"><%= site.title %></h1>
+
+<ul>
+  <% list.forEach((post) => { %>
+  <li>
+    <a href="<%= post.url %>"><%= post.data.title %></a>
+    - <%= this.dateFns.format(new Date(post.data.date), 'LLLL d, yyyy') %>
+  </li>
+  <% }) %>
+</ul>
+
+<div class="pt-3">
+  <% if (pagination.previous) { %>
+  <a href="<%= pagination.previous.replace(/index.html$/, "") %>">Newer Posts</a>
+  <% } %> <% if (pagination.next) { %>
+  <a href="<%= pagination.next.replace(/index.html$/, "") %>">Older Posts</a>
+  <% } %>
+</div>
