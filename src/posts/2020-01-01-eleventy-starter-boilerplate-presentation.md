@@ -44,6 +44,16 @@ Production-ready in mind:
 
 - Node.js and npm
 
+### Premium Themes
+
+| [Blue Dark Eleventy Theme](https://creativedesignsguru.com/blue-dark-eleventy-theme/) | [Blue Eclatant Eleventy Theme](https://creativedesignsguru.com/blue-eclatant-eleventy-theme/) |
+| --- | --- |
+| [![Blue Dark Eleventy Theme premium](https://creativedesignsguru.com/assets/images/themes/blue-dark-mode-eleventy-theme-homepage-xs.png)](https://creativedesignsguru.com/blue-dark-eleventy-theme/) | [![Blue Eclatant Eleventy Theme premium](https://creativedesignsguru.com/assets/images/themes/eclatant-blue-eleventy-theme-homepage-xs.png)](https://creativedesignsguru.com/blue-eclatant-eleventy-theme/) |
+
+| [Blue Modern Eleventy Theme](https://creativedesignsguru.com/blue-modern-eleventy-theme/) | [Blue Minimalist Eleventy Theme](https://creativedesignsguru.com/blue-minimalist-eleventy-theme/) |
+| --- | --- |
+| [![Blue Modern Eleventy Theme premium](https://creativedesignsguru.com/assets/images/themes/modern-blue-eleventy-theme-homepage-xs.png)](https://creativedesignsguru.com/blue-modern-eleventy-theme/) | [![Blue Minimalist Eleventy Theme premium](https://creativedesignsguru.com/assets/images/themes/minimalist-blue-eleventy-theme-homepage-xs.png)](https://creativedesignsguru.com/blue-minimalist-eleventy-theme/) |
+
 ### Getting started
 
 Run the following command on your local environment:
@@ -107,6 +117,12 @@ npm run build
 ```
 
 Now, your blog is ready to be deployed. All generated files are located at `_site` folder, which you can deploy with any hosting service.
+
+### Deploy to Netlify
+
+Clone this repository on own GitHub account and deploy to Netlify:
+
+[![Netlify Deploy button](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/ixartz/Eleventy-Starter-Boilerplate)
 
 ### Contributions
 
