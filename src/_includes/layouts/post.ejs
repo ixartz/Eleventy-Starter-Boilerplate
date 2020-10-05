@@ -2,17 +2,13 @@
 layout: layouts/base.ejs
 ---
 
-<article class="post">
+<article>
   <header>
-    <h1 class="font-bold text-3xl"><%= title %></h1>
-    <div class="text-gray-600">
-      <%= this.dateFns.format(new Date(date), 'LLLL d, yyyy') %>
-    </div>
+    <h1 class="text-center font-bold text-3xl text-gray-800"><%= title %></h1>
+    <div class="text-center text-sm mb-8"><%= this.dateFns.format(new Date(date), 'LLLL d, yyyy') %></div>
   </header>
-  <section class="pt-3 pb-3">
+
+  <section class="content">
     <%- content %>
   </section>
-  <footer>
-    <a href="/">Back to home</a>
-  </footer>
 </article>

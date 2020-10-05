@@ -1,14 +1,16 @@
 ---
 title: 'Eleventy Starter Boilerplate Presentation'
 description: Everything you need to use this Eleventy Boilerplate template
-date: 2020-01-01 00:00:00
+date: 2020-05-05 00:00:00
 ---
 
-# Eleventy Starter Boilerplate
+[![Eleventy starter boilerplate banner](/assets/images/posts/eleventy-js-starter-boilerplate.png)](https://creativedesignsguru.com/demo/Eleventy-Starter-Boilerplate/)
 
 🚀 Eleventy Starter Boilerplate is production-ready with SEO-friendly for quickly starting a blog. ⚡️ Built with [Eleventy](https://www.11ty.dev), [ESLint](https://eslint.org), [Prettier](https://prettier.io), [Webpack](https://webpack.js.org), [PostCSS](https://postcss.org), [Tailwind CSS](https://tailwindcss.com).
 
-Clone this project and use it to create your own [Eleventy](https://www.11ty.dev) blog.
+Clone this project and use it to create your own [Eleventy](https://www.11ty.dev) blog. You can check a [Eleventy js blog templates demo](https://creativedesignsguru.com/demo/Eleventy-Starter-Boilerplate/).
+
+The GitHub repository is located [Eleventy Starter Boilerplate](https://github.com/ixartz/Eleventy-Starter-Boilerplate).
 
 ### Features
 
@@ -33,6 +35,7 @@ Production-ready in mind:
 - 📖 Pagination
 - ✅ Cache busting
 - 💯 Maximize lighthouse score
+- 🌈 Include a FREE minimalist blog theme
 
 ### Philosophy
 
@@ -44,7 +47,7 @@ Production-ready in mind:
 
 - Node.js and npm
 
-### Premium Themes
+### Premium Themes ([Eleventy Themes](https://creativedesignsguru.com/category/eleventy/))
 
 | [Blue Dark Eleventy Theme](https://creativedesignsguru.com/blue-dark-eleventy-theme/) | [Blue Eclatant Eleventy Theme](https://creativedesignsguru.com/blue-eclatant-eleventy-theme/) |
 | --- | --- |
@@ -134,6 +137,6 @@ Licensed under the MIT License, Copyright © 2020
 
 See [LICENSE](https://github.com/ixartz/Eleventy-Starter-Boilerplate/blob/master/LICENSE) for more information.
 
----
+### GitHub
 
-Made with ♥ by [Ixartz](https://github.com/ixartz)
+The GitHub repository is located [Eleventy Starter Boilerplate](https://github.com/ixartz/Eleventy-Starter-Boilerplate) maintained by [Creative Design Guru](https://creativedesignsguru.com).
