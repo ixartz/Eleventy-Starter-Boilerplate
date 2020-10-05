@@ -48,10 +48,10 @@
   <div class="max-w-screen-md mx-auto">
     <div class="border-b border-gray-300">
       <div class="pt-16 pb-8">
-        <div class="font-semibold text-3xl text-gray-800"><%= site.title %></div>
+        <h1 class="font-semibold text-3xl text-gray-800"><%= site.title %></h1>
         <div class="text-xl"><%= site.description %></div>
       </div>
-      <div>
+      <nav>
         <ul class="flex flex-wrap text-xl">
           <li class="mr-6">
             <a class="text-gray-700 border-none hover:no-underline hover:text-gray-800" href="/">Home</a>
@@ -63,7 +63,7 @@
             </a>
           </li>
         </ul>
-      </div>
+      </nav>
     </div>
 
     <div class="text-xl py-5"><%- content %></div>
