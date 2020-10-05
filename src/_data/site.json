@@ -2,7 +2,8 @@
   "site_name": "Starter",
   "title": "Eleventy Starter Boilerplate",
   "description": "Starter code for your 11ty blog Boilerplate",
-  "url": "https://example.com",
+  "url": "https://creativedesignsguru.com/demo/Eleventy-Starter-Boilerplate",
+  "baseUrl": "/demo/Eleventy-Starter-Boilerplate",
   "locale": "en",
   "author": "Anonymous"
 }

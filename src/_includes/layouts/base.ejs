@@ -4,10 +4,10 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
-  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
-  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
-  <link rel="icon" href="/favicon.ico" />
+  <link rel="apple-touch-icon" href="<%= site.baseUrl %>/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="<%= site.baseUrl %>/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="<%= site.baseUrl %>/favicon-16x16.png" />
+  <link rel="icon" href="<%= site.baseUrl %>/favicon.ico" />
   <title><%= title %></title>
   <meta name="description" content="<%= (!!locals.description) ? description : site.description %>" />
   <meta name="author" content="<%= site.author %>" />
@@ -54,7 +54,7 @@
       <div>
         <ul class="flex flex-wrap text-xl">
           <li class="mr-6">
-            <a class="text-gray-700 border-none hover:no-underline hover:text-gray-800" href="/">Home</a>
+            <a class="text-gray-700 border-none hover:no-underline hover:text-gray-800" href="<%= site.baseUrl %>/">Home</a>
           </li>
           <li class="mr-6">
             <a class="text-gray-700 border-none hover:no-underline hover:text-gray-800"

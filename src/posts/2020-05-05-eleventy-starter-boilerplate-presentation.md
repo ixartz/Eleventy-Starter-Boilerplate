@@ -4,7 +4,7 @@ description: Everything you need to use this Eleventy Boilerplate template
 date: 2020-05-05 00:00:00
 ---
 
-[![Eleventy starter boilerplate banner](/assets/images/posts/eleventy-js-starter-boilerplate.png)](https://creativedesignsguru.com/demo/Eleventy-Starter-Boilerplate/)
+[![Eleventy starter boilerplate banner](../assets/images/posts/eleventy-js-starter-boilerplate.png)](https://creativedesignsguru.com/demo/Eleventy-Starter-Boilerplate/)
 
 🚀 Eleventy Starter Boilerplate is production-ready with SEO-friendly for quickly starting a blog. ⚡️ Built with [Eleventy](https://www.11ty.dev), [ESLint](https://eslint.org), [Prettier](https://prettier.io), [Webpack](https://webpack.js.org), [PostCSS](https://postcss.org), [Tailwind CSS](https://tailwindcss.com).
 

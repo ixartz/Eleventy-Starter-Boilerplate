@@ -12,7 +12,7 @@ module.exports = function (eleventyConfig) {
         // Handle remote file
         return imgPath;
       } else {
-        return `./src/${imgPath}`;
+        return `./src/posts/${imgPath}`;
       }
     },
   });

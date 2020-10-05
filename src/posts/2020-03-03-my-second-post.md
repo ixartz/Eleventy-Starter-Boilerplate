@@ -8,7 +8,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit.
 
 Example with image:
 
-![Error](/assets/images/posts/error.png)
+![Error](../assets/images/posts/error.png)
 
 Example code block:
 
