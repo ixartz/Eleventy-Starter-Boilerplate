@@ -31,6 +31,7 @@ Production-ready in mind:
 - 📖 Pagination
 - ✅ Cache busting
 - 💯 Maximize lighthouse score
+- 🌈 Include a FREE minimalist blog theme
 
 ### Philosophy
 
@@ -42,7 +43,7 @@ Production-ready in mind:
 
 - Node.js and npm
 
-### Premium Themes
+### Premium Themes ([Eleventy Themes](https://creativedesignsguru.com/category/eleventy/))
 
 | [Blue Dark Eleventy Theme](https://creativedesignsguru.com/blue-dark-eleventy-theme/) | [Blue Eclatant Eleventy Theme](https://creativedesignsguru.com/blue-eclatant-eleventy-theme/) |
 | --- | --- |
@@ -134,4 +135,4 @@ See [LICENSE](LICENSE) for more information.
 
 ---
 
-Made with ♥ by [Ixartz](https://github.com/ixartz)
+Made with ♥ by [CreativeDesignsGuru](https://creativedesignsguru.com)

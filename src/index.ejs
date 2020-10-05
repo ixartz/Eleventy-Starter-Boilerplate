@@ -9,21 +9,24 @@ eleventyComputed:
   title: '<% if (pagination.pageNumber > 0) { %><%= `Page ${pagination.pageNumber + 1} | ${site.title}` %><% } else { %><%= site.title %><% } %>'
 ---
 
-<h1 class="font-bold text-3xl"><%= site.title %></h1>
-
 <ul>
   <% list.forEach((post) => { %>
-  <li>
+  <li class="mb-3 flex justify-between">
     <a href="<%= post.url %>"><%= post.data.title %></a>
-    - <%= this.dateFns.format(new Date(post.data.date), 'LLLL d, yyyy') %>
+
+    <div><%= this.dateFns.format(new Date(post.data.date), 'LLLL d, yyyy') %></div>
   </li>
   <% }) %>
 </ul>
 
-<div class="pt-3">
+<div class="text-sm flex justify-between">
   <% if (pagination.previous) { %>
-  <a href="<%= pagination.previous.replace(/index.html$/, "") %>">Newer Posts</a>
+  <div>
+    <a href="<%= pagination.previous.replace(/index.html$/, "") %>">← Newer Posts</a>
+  </div>
   <% } %> <% if (pagination.next) { %>
-  <a href="<%= pagination.next.replace(/index.html$/, "") %>">Older Posts</a>
+  <div class="text-right ml-auto">
+    <a href="<%= pagination.next.replace(/index.html$/, "") %>">Older Posts →</a>
+  </div>
   <% } %>
 </div>

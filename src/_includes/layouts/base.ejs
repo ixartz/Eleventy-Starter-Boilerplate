@@ -1,29 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
-    <link rel="icon" href="/favicon.ico" />
-    <title><%= title %></title>
-    <meta
-      name="description"
-      content="<%= (!!locals.description) ? description : site.description %>"
-    />
-    <meta name="author" content="<%= site.author %>" />
-    <meta property="og:title" content="<%= title %>" />
-    <meta
-      property="og:description"
-      content="<%= (!!locals.description) ? description : site.description %>"
-    />
-    <meta property="og:locale" content="<%= site.locale %>" />
-    <meta property="og:site_name" content="<%= site.site_name %>" />
-    <% if (locals.tags == "posts") { %>
-    <meta property="og:type" content="article" />
-    <meta property="article:published_time" content="<%= date.toISOString() %>" />
-    <script type="application/ld+json">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+  <link rel="icon" href="/favicon.ico" />
+  <title><%= title %></title>
+  <meta name="description" content="<%= (!!locals.description) ? description : site.description %>" />
+  <meta name="author" content="<%= site.author %>" />
+  <meta property="og:title" content="<%= title %>" />
+  <meta property="og:description" content="<%= (!!locals.description) ? description : site.description %>" />
+  <meta property="og:locale" content="<%= site.locale %>" />
+  <meta property="og:site_name" content="<%= site.site_name %>" />
+  <% if (locals.tags == "posts") { %>
+  <meta property="og:type" content="article" />
+  <meta property="article:published_time" content="<%= date.toISOString() %>" />
+  <script type="application/ld+json">
       {
         "description": "<%= (!!locals.description) ? description : site.description %>",
         "author": { "@type": "Person", "name": "<%= site.author %>" },
@@ -46,9 +41,38 @@
         "@context": "http://schema.org"
       }
     </script>
-    <% } %> <%- include('webpack.ejs') %>
-  </head>
-  <body>
-    <%- content %>
-  </body>
+  <% } %> <%- include('webpack.ejs') %>
+</head>
+
+<body class="antialiased w-full text-gray-700">
+  <div class="max-w-screen-md mx-auto">
+    <div class="border-b border-gray-300">
+      <div class="pt-16 pb-8">
+        <div class="font-semibold text-3xl text-gray-800"><%= site.title %></div>
+        <div class="text-xl"><%= site.description %></div>
+      </div>
+      <div>
+        <ul class="flex flex-wrap text-xl">
+          <li class="mr-6">
+            <a class="text-gray-700 border-none hover:no-underline hover:text-gray-800" href="/">Home</a>
+          </li>
+          <li class="mr-6">
+            <a class="text-gray-700 border-none hover:no-underline hover:text-gray-800"
+              href="https://github.com/ixartz/Eleventy-Starter-Boilerplate">
+              GitHub
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="text-xl py-5"><%- content %></div>
+
+    <div class="border-t border-gray-300 text-center py-8">
+      Made with <span role="img" aria-label="Love">♥</span> by <a
+        href="https://creativedesignsguru.com">CreativeDesignsGuru</a>
+    </div>
+  </div>
+</body>
+
 </html>
