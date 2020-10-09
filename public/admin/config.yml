@@ -13,6 +13,6 @@ collections:
     slug: "{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
     fields: # The fields for each document, usually in front matter
       - { name: "title", label: "Title" }
-        { name: "description", label: "Description" }
-        { name: "date", label: "Date", widget: "datetime" }
-        { name: "body", label: "Body", widget: "markdown" }
+      - { name: "description", label: "Description" }
+      - { name: "date", label: "Date", widget: "datetime" }
+      - { name: "body", label: "Body", widget: "markdown" }
