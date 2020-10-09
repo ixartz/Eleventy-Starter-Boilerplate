@@ -1,0 +1,18 @@
+backend:
+  name: git-gateway
+  branch: master
+
+media_folder: 'src/assets/images/posts' # Media files will be stored in the repo under src/assets/images/posts
+public_folder: '/assets/images/posts' # The src attribute for uploaded media will begin with assets/images/posts
+
+collections:
+  - name: "blog" # Used in routes, e.g., /admin/collections/blog
+    label: "Blog" # Used in the UI
+    folder: "src/posts" # The path to the folder where the documents are stored
+    create: true # Allow users to create new documents in this collection
+    slug: "{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
+    fields: # The fields for each document, usually in front matter
+      - { name: "title", label: "Title" }
+        { name: "description", label: "Description" }
+        { name: "date", label: "Date", widget: "datetime" }
+        { name: "body", label: "Body", widget: "markdown" }
