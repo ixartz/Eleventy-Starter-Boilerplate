@@ -1,7 +1,7 @@
 ---
 title: 'My second post'
 description: Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-date: 2020-03-03 00:00:00
+date: 2020-03-03T00:00:00Z
 ---
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit.

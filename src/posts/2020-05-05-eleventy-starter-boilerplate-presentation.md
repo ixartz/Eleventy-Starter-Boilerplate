@@ -1,12 +1,12 @@
 ---
 title: 'Eleventy Starter Boilerplate Presentation'
 description: Everything you need to use this Eleventy Boilerplate template
-date: 2020-05-05 00:00:00
+date: 2020-05-05T00:00:00Z
 ---
 
 [![Eleventy starter boilerplate banner](../assets/images/posts/eleventy-js-starter-boilerplate.png)](https://creativedesignsguru.com/demo/Eleventy-Starter-Boilerplate/)
 
-🚀 Eleventy Starter Boilerplate is production-ready with SEO-friendly for quickly starting a blog. ⚡️ Built with [Eleventy](https://www.11ty.dev), [ESLint](https://eslint.org), [Prettier](https://prettier.io), [Webpack](https://webpack.js.org), [PostCSS](https://postcss.org), [Tailwind CSS](https://tailwindcss.com).
+🚀 Eleventy Starter Boilerplate is production-ready with SEO-friendly for quickly starting a blog. ⚡️ Built with [Eleventy](https://www.11ty.dev), [ESLint](https://eslint.org), [Prettier](https://prettier.io), [Webpack](https://webpack.js.org), [PostCSS](https://postcss.org), [Tailwind CSS](https://tailwindcss.com) and [Netlify CMS](https://www.netlifycms.org) (optional).
 
 Clone this project and use it to create your own [Eleventy](https://www.11ty.dev) blog. You can check a [Eleventy js blog templates demo](https://creativedesignsguru.com/demo/Eleventy-Starter-Boilerplate/).
 
@@ -36,6 +36,7 @@ Production-ready in mind:
 - ✅ Cache busting
 - 💯 Maximize lighthouse score
 - 🌈 Include a FREE minimalist blog theme
+- 🗒 Netlify CMS (optional)
 
 ### Philosophy
 
@@ -126,6 +127,14 @@ Now, your blog is ready to be deployed. All generated files are located at `_sit
 Clone this repository on own GitHub account and deploy to Netlify:
 
 [![Netlify Deploy button](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/ixartz/Eleventy-Starter-Boilerplate)
+
+### Remove Netlify files and Netlify CMS
+
+If you don't use Netlify, you can easily remove all Netlify related files:
+
+- `public/admin`, the entier folder
+- `src/_includes/layouts/base.ejs`, the loaded script `netlify-identity-widget.js` and the inline script `if (window.netlifyIdentity) { ...`
+- `netlify.toml`, the entire file
 
 ### Contributions
 
