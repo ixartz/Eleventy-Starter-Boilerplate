@@ -73,7 +73,7 @@ a:hover {
 }
 
 .content table {
-  @apply whitespace-no-wrap my-8 border-collapse block overflow-auto;
+  @apply whitespace-nowrap my-8 border-collapse block overflow-auto;
 }
 
 .content th,

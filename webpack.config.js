@@ -1,10 +1,8 @@
 const glob = require('glob');
 const path = require('path');
-const webpack = require('webpack');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
-const FixStyleOnlyEntriesPlugin = require('webpack-fix-style-only-entries');
 
 const entries = glob.sync(path.resolve(__dirname, 'src/assets/images/posts/*.{png,gif,jpg,jpeg}'));
 entries.push(path.resolve(__dirname, 'src/assets/styles/main.css'));
@@ -28,10 +26,6 @@ module.exports = {
   plugins: [
     new CopyWebpackPlugin({
       patterns: [{ from: path.resolve(__dirname, 'public'), to: path.resolve(__dirname, '_site') }],
-    }),
-    new webpack.HashedModuleIdsPlugin(),
-    new FixStyleOnlyEntriesPlugin({
-      extensions: ['less', 'scss', 'css', 'styl', 'sass', 'png', 'gif', 'jpg', 'jpeg'], // Empty js should also not be generated with image
     }),
     new MiniCssExtractPlugin({
       filename: cssFileName,
